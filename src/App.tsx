@@ -1,7 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import Button from '@mui/material/Button';
 import { invoke } from "@tauri-apps/api/tauri";
+import { useState } from "react";
 import "./App.css";
+import reactLogo from "./assets/react.svg";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div className="container">
+      <Button variant='contained' type='button' color='secondary'>yyyyy</Button>
       <h1>Welcome to Tauri!</h1>
       <div className="row">
         <a href="https://vitejs.dev" target="_blank">
